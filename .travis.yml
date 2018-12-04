@@ -2,10 +2,8 @@ language: csharp
 solution: DockerTest.sln
 mono: none
 sudo: false
-dotnet: 2.1.500
+dotnet: 2.1.300
 install:
   - dotnet restore
-services: 
-  - docker
 script:
   - dotnet test ./DockerTest.Tests/DockerTest.Tests.csproj
