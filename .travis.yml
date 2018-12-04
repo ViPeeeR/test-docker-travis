@@ -3,5 +3,7 @@ solution: DockerTest.sln
 mono: none
 sudo: false
 dotnet: 2.1.300
-install:
+services:
+    - docker
+before_install:
   - docker-compose build
