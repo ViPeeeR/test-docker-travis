@@ -4,6 +4,4 @@ mono: none
 sudo: false
 dotnet: 2.1.300
 install:
-  - dotnet restore
-script:
-  - dotnet test ./DockerTest.Tests/DockerTest.Tests.csproj
+  - docker-compose build
